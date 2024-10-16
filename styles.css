@@ -16,6 +16,7 @@ h1 {
 } 
 .project {
     width: 30%;
+    padding-right: 35px;
 }
 
 /* fix border; icon css */
