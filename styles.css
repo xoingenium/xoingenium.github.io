@@ -14,5 +14,8 @@ h1 {
     display: flex;
     flex-wrap: wrap; 
 } 
+.project {
+    width: 30%;
+}
 
 /* fix border; icon css */
