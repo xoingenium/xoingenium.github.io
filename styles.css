@@ -2,17 +2,29 @@ body {
     background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.headerimg {
-    margin-bottom: 20px;
-}
 .headerimg img {
-    width: 8%;
-    max-width: 150px; /* limits how large the img can grow; overrides width */
-    height: auto; /* adjust the height to keep the image's original aspect ratio */
+    width: 50px; 
+    height: 50px;
+    max-width: 100%; 
     border-radius: 3px; /* rounds corners of img */
+}
+@media (max-width: 600px) {
+    .headerimg img {
+        width: 100px;         /* setting a fixed width for the image on mobile */
+        height: 100px;     
+    }
+}
+h1 {
+    font-size: 2.5rem;      /* 2.5 times root font size (usually 16px by default for most browsers) */
+    font-weight: 700;       /* makes text bold (700 is heavy font weight) */
 }
 h1, h2 {
     color: black;
+    letter-spacing: -0.01em;  /* tightens the letter spacing */
+}
+h2 {
+    font-weight: 600;       /* headers are a little less bold than the title (600 is medium bold) */
+
 }
 .projects { 
     display:flex; flex-wrap:wrap; 
@@ -20,15 +32,11 @@ h1, h2 {
 .project {
     width: 30%;
     margin: 10px;
-    padding: 0px 10px;
-    background: white; 
-    border-radius: 1%;
+    padding: 0px 10px; 
 }
 p, ul {
     color: black;
     width: 30%;
     margin: 10px;
     padding: 0px 10px;
-    background: white; 
-    border-radius: 1%;
 }
