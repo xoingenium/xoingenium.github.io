@@ -10,7 +10,7 @@ html {
     text-decoration-color: lightgray;
     /* this targets the actual text */ 
     color: lightgray;
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 #table_of_contents a[href="#section4"], a[href="#section3"] {
     padding-left: 20px;
