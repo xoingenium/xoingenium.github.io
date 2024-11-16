@@ -95,7 +95,7 @@ ul {
 @media screen and (min-width: 480px) {
     #content {
       /* 0 margin for top and bottom; auto takes the margins for left and right and splits it evenly */
-      margin: 100px auto 25px;
+      margin: 0px auto;
     }
   }
 
