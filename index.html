@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes website responsive -->
+  <!-- information for website to work -->
+  <head> 
+    <!-- makes website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>CSCE 190: Oluchi Elijah</title>
-    <link rel="stylesheet" href="styles.css" /> <!-- links css stylesheet -->
+    <!-- stylesheet made by bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+    <!-- links css stylesheet -->
+    <link rel="stylesheet" href="styles.css" /> 
   </head>
+
+  <!-- what is being displayed-->
   <body>
+    <div id="content"> 
+
     <!-- Header Image -->
     <div class="headerimg">
         <img src="images/headerPicture.jpeg">
@@ -16,61 +25,61 @@
     
     <!-- Mission Statement -->
     <div class="missionStatement">
-        <p> "I am a computer science student at the University of South Carolina with a passion 
+        <p> ❝I am a computer science student at the University of South Carolina with a passion 
             for sports and a strong interest in developing technologies that support athletes. My 
-            long-term goal is to improve the 'Athlete Central' platform, making it more user-friendly
+            long-term goal is to have the opportunity to improve the 'Athlete Central' platform, making it more user-friendly
             and effective for managing anti-doping responsibilities. As a future software engineer, I 
             am committed to applying my skills to create innovative solutions that address a variety 
-            of challenges across different industries." </p>
+            of challenges across different industries.❞ </p>
     </div>
 
-    <div class="about_skills"></div>
+    <div class="about_skills">
         <section class="about_skills">
             <ul>
                 <li>Computer Science Major, Business Administration Minor, Sophomore at The University of South Carolina</li>
-                <li>Technologicial Languages: Java</li> 
-                <li>Other: HTML, CSS</li> 
             </ul>
         </section>
     </div>
 
-    <h2>Résumé</h2>
+    <div id="table_of_contents">
+        <a href="#section1">Résumé</a><br>
+        <a href="#section2">Highlighted Projects</a><br>
+        <a href="#section3">Problem Statement</a><br>
+        <a href="#section4">Affinity Diagram</a><br>
+        <a href="#section5">Contact Me</a>
+    </div>
+
+    <h2 id="section1">Résumé</h2>
     <div class="résumé"></div>
 
-    <h2>Highlighted Projects</h2>
+    <h2 id="section2">Highlighted Projects</h2>
     <div class="projects">
         <div class="projects">
             <!-- Problem Statement Assignment -->
             <section class="project">
                 <a href="files/problemStatement.pdf">
-                    <h3>Problem Statement</h3>
+                    <h3 id="section3">Problem Statement</h3>
                 </a>
+                <p>Athletes at all levels need a reliable, accurate tool to calculate their Total Daily Energy Expenditure (TDEE) and receive personalized calorie recommendations that reflect the intensity of their training.</p>
                 <a href="files/problemStatement.pdf">
                     <img src="images/problemStatement.png" width="350" height="300">
                 </a>
-                <p>Athletes at all levels need a reliable, accurate tool to calculate their Total Daily Energy Expenditure (TDEE) and receive personalized calorie recommendations that reflect the intensity of their training.</p>
             </section>
             <!--Affinity Diagram Assignment -->
             <section class="project">
                 <a href="files/affinityDiagram.pdf">
-                    <h3>Affinity Diagram</h3></a>
+                    <h3 id="section4">Affinity Diagram</h3></a>
+                    <p>Affinity diagram that outlines the key steps required for the successful execution of the project.</p>
                 <a href="files/affinityDiagram.pdf">
                     <img src="images/affinityDiagram_full.png" width="350" height="300"></a>
-                <p>Affinity diagram that outlines the key steps required for the successful execution of the project.</p>
             </section>
         </div>
 
-    <h2>Contact Me</h2>
-    <div class="contact">
+    <h2 id="section5" class="contact">Contact Me</h2>
+    <div class="contactInfo">
         <p><b>Email </b>- ariikeelijah@gmail.com</p>
         <p><b>LinkedIn </b>-</p>
     </div>
+    </div>
   </body>
 </html>
-
-<!-- I am a computer science student at the University of South Carolina with a passion 
-for sports and a strong interest in developing technologies that support athletes. My 
-long-term goal is to improve the 'Athlete Central' platform, making it more user-friendly
-and effective for managing anti-doping responsibilities. As a future software engineer, I 
-am committed to applying my skills to create innovative solutions that address a variety 
-of challenges across different industries. --> 

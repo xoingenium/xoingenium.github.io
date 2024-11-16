@@ -1,22 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+#table_of_contents {
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+#table_of_contents a {
+    /* this targets the underline (text decoration!!) */
+    text-decoration-color: lightgray;
+    /* this targets the actual text */ 
+    color: lightgray;
+    font-size: 0.8em;
+}
+#table_of_contents a[href="#section4"], a[href="#section3"] {
+    padding-left: 20px;
+}
 body {
     background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    /* default for media query */
+    margin-left: 0;
+}
+/* created to change the size of the insides without changing body; body is all of screen */
+#content { 
+    /* margin: 0 auto; */
+    max-width: 800px;
+    margin: 10px;
+    padding: 0px 10px;
+    margin-top: 10px;
 }
 .headerimg img {
-    width: 50px; 
-    height: 50px;
+    width: 130px; 
     max-width: 100%; 
     border-radius: 3px; /* rounds corners of img */
-}
-@media (max-width: 600px) {
-    .headerimg img {
-        width: 100px;         /* setting a fixed width for the image on mobile */
-        height: 100px;     
-    }
+    margin-bottom: 10px;
 }
 h1 {
-    font-size: 2.5rem;      /* 2.5 times root font size (usually 16px by default for most browsers) */
+    font-size: 2.7rem;      /* 2.5 times root font size (usually 16px by default for most browsers) */
     font-weight: 700;       /* makes text bold (700 is heavy font weight) */
+    margin-bottom: 30px;
 }
 h1, h2 {
     color: black;
@@ -24,19 +47,59 @@ h1, h2 {
 }
 h2 {
     font-weight: 600;       /* headers are a little less bold than the title (600 is medium bold) */
+    font-size: 2.4rem;
+    margin-bottom: 6px;
+    margin-top: 20px;
 
 }
 .projects { 
-    display:flex; flex-wrap:wrap; 
+    /* block puts text under; flex puts side by side */
+    display: block; 
 }
-.project {
-    width: 30%;
-    margin: 10px;
-    padding: 0px 10px; 
+/* targeting h3 which is inside a which is inside project class */
+.project a h3 {
+    color: black;
+    font-weight: 600;
+    margin-top: 17px;
+}
+/* this is specifically for the link inside project */
+.project a {
+    text-decoration: none;
+} 
+.project img {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /* border: size color style; e.g. "border: 10px red dashed;" creates a bold, red dashed border */
+    border: 1px lightgray solid;
+    border-radius: 1px;
 }
 p, ul {
     color: black;
-    width: 30%;
-    margin: 10px;
-    padding: 0px 10px;
 }
+p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+ul {
+    margin-left: -16px;
+    margin-top: 21px;
+    margin-bottom: 21px; /* can comment out later */
+}
+.line {
+    display: block;
+}
+.contactInfo p {
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+@media screen and (min-width: 480px) {
+    #content {
+      /* 0 margin for top and bottom; auto takes the margins for left and right and splits it evenly */
+      margin: 100px auto 25px;
+    }
+  }
+
+/* insert resume and resume border
+insert sketches and borders
+add hyperlink to gmail
+ */
