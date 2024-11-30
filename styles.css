@@ -2,14 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 #table_of_contents {
-    margin-bottom: 32px;
-    line-height: 1.6;
+    line-height: 2;
+    letter-spacing: .2px;
 }
 #table_of_contents a {
     /* this targets the underline (text decoration!!) */
-    text-decoration-color: lightgray;
+    text-decoration-color: gray;
+    opacity: 0.7;
     /* this targets the actual text */ 
-    color: lightgray;
+    color: gray;
     font-size: 0.85em;
 }
 #table_of_contents a[href="#section4"], a[href="#section3"], a[href="#section5"], a[href="#section6"] {
@@ -37,9 +38,10 @@ body {
     margin-bottom: 10px;
 }
 h1 {
-    font-size: 2.7rem;      /* 2.5 times root font size (usually 16px by default for most browsers) */
+    font-size: 2.5rem;      /* 2.5 times root font size (usually 16px by default for most browsers) */
     font-weight: 700;       /* makes text bold (700 is heavy font weight) */
     margin-bottom: 30px;
+    margin-top: 0.75px;
 }
 h1, h2 {
     color: black;
@@ -47,14 +49,15 @@ h1, h2 {
 }
 h2 {
     font-weight: 600;       /* headers are a little less bold than the title (600 is medium bold) */
-    font-size: 2.4rem;
     margin-bottom: 6px;
-    margin-top: 20px;
+    margin-top: .875em;
+    font-size: calc(1.325rem + 1.5vw);
 }
-.resume p {
+.resume a {
     border: 1px lightgray solid;
     padding: 15px;
     border-radius: 3px;
+    margin: 1em 0;
 }
 .projects { 
     /* block puts text under; flex puts side by side */
@@ -65,6 +68,7 @@ h2 {
     color: black;
     font-weight: 600;
     margin-top: 17px;
+    font-size: calc(1.325rem + .9vw);
 }
 /* this is specifically for the link inside project */
 .project a {
